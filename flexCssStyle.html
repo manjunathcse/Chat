@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        .container {
+            display: flex;
+            background: linear-gradient(to bottom, #fff 50%, #efefef 50%);
+            width: 500px;
+            padding-bottom: 20px;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .wrapper {
+            width: 400px;
+            height: 200px;
+            border: 1px solid gray;
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .image {
+            flex: 1;
+            display: flex;
+            height: 200px;
+            width: 50%;
+            background-color: red;
+        }
+        
+        .right {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        
+        .topRight {
+            display: flex;
+            height: 50%;
+            flex-direction: column;
+            height: 50%;
+            position: relative;
+        }
+        
+        .bottomRight {
+            position: relative;
+            display: flex;
+            height: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Trending</h1>
+        <div class="wrapper">
+            <div class="image"></div>
+            <div class="right">
+                <div class="topRight">Top right container to show the most important data</div>
+                <div class="bottomRight">bottom right container to show the most important data</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
